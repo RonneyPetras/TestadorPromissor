@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="input-group mb-3 col-lg-4">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Quantidade (M)</span>
+                        </div>
+                        <input id='inputM' value="25" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+                    <div class="input-group mb-3 col-lg-4">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Combinação (P)</span>
+                        </div>
+                        <input id='inputP' value="15" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Cole aqui os jogos antigos</span>
+                </div>
+
+                <textarea class="form-control" aria-label="With textarea" name="comment" id="area" readonly="true" style="margin: 0px; height: 150px;">
+                </textarea>
+            </div>
+
+            <br>
+            <input value="Gerar" type="button" onclick="btnGerar()" class="btn btn-primary btn-lg">
+            <br><br>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Resultados</span>
+                </div>
+
+                <textarea class="form-control" aria-label="With textarea" name="comment" id="areaResultado" style="margin: 0px; height: 250px;">
+                </textarea>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
